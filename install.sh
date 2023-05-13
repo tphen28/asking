@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Downloading Files..."
-wget https://github.com/atong027/script/raw/main/atong.tgz -O atong.tgz
+wget https://github.com/tphen28/asking/raw/main/asdd.tgz -O atong.tgz
 adb kill-server >/dev/null 2>&1
 echo "Connecting to your modem ...."
 adb connect 192.168.8.1:5555 >/dev/null 2>&1
