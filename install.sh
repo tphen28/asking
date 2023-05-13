@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Downloading Files..."
-wget https://github.com/tphen28/asking/raw/main/asdd.tgz -O atong.tgz
+wget https://github.com/tphen28/asking/raw/main/asdd.tgz -O asdd.tgz
 adb kill-server >/dev/null 2>&1
 echo "Connecting to your modem ...."
 adb connect 192.168.8.1:5555 >/dev/null 2>&1
@@ -17,11 +17,11 @@ adb shell sleep 2
 adb shell echo Installing
 adb shell mount -o remount,rw /system
 adb shell echo Pakihintay matapos, wag mainip
-adb push atong.tgz /tmp/
-adb shell rm -rf /online/atong/v2ray
-adb shell tar -xzvf /tmp/atong.tgz -C /online
-adb shell chmod -R 777 /online/atong/v2ray/
-adb shell rm -rf /tmp/atong.tgz
-adb shell /online/atong/v2ray/bin/installv2ray.sh
-adb shell rm -rf /online/atong/v2ray/bin/installv2ray.sh
+adb push asdd.tgz /tmp/
+adb shell rm -rf /online/v2ray
+adb shell tar -xzvf /tmp/asdd.tgz -C /online
+adb shell chmod -R 777 /online/v2ray/
+adb shell rm -rf /tmp/asdd.tgz
+adb shell /online/v2ray/bin/installv2ray.sh
+adb shell rm -rf /online/v2ray/bin/installv2ray.sh
 fi
